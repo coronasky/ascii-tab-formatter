@@ -1,4 +1,4 @@
-# ASCII Tab Formatter
+# Guitar ASCII Tab Formatter
 
 A simple script to generate printing-friendly ascii guitar tablature.
 The script consumes an existing guitar tab (e.g., downloaded from a website), and format the tab to a different length which is easy to print. For example, this tab [BWV1068 Air](https://www.classtab.org/bach_js_bwv1068_suite_no3_in_d_2_air.txt) has 2 measures per line.
