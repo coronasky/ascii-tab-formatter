@@ -28,7 +28,7 @@ E||---------------------3--3--|--1----------2---3--3---1--1--|
 ------------------------2-------|--3------------2---3----------------||
 ```
 When printing the tab, it is a waste of space. Maybe you want to put more measures that fits the width of the paper. 
-The script can generate a printing friendly format for the same score.
+The script can generate a printing friendly score from the original score.
 ```
 E||---0-----0-----0-----0-----|--0--5------------------------|--3---------3-----0---------3-1-|--1--------0-1---------------1-0-|
 B||---1-----1-----1-----1-----|--1----6-3---0-1-0------------|------------------------3-2-----|-----3-1-3-----3---3-----1-0-----|
@@ -60,22 +60,22 @@ Run the script and redirect output.
 It should work on both python2 and python3. No extra packages needed.
 
 ## User Options
-* line_period
+* `line_period`
 
    Period for lines in input format, including all extra lines before/after the 6-line score.
-* start_skip_lines
+* `start_skip_lines`
 
    Lines to be skipted at the beginning, for example the title and description.
-* begin_char
+* `begin_char`
 
    Number of common starting chars of each line, e.g., for 'B|' `begin_char = 2`. If there is no common starting char, use 0.
-* measure_note
+* `measure_note`
 
    Separator for measures, usually '|'.
-* measure_per_line
+* `measure_per_line`
 
    Max number of measures per line.
-* max_char_line
+* `max_char_line`
 
    Max number of total chars per line.
 
@@ -96,7 +96,7 @@ For portriat orientation of a Letter size paper, taking monospaced font `Courier
 | 6| 129 | 
 | 5| 155 | 
 
-Personnally, size 7-10 is recommended for printing.
+Size 7-10 is recommended for printing.
 
 ## Author
 * **Haotian Liu** - [coronasky](https://github.com/coronasky)
