@@ -27,6 +27,8 @@ def preprocess_score(content):
     for i in range(len(data)): 
         curr_len, tot_len = len(data[i]), len(data[ i - (i % line_period) + 2])
         measures[i % line_period] = measures[i % line_period] + data[i].ljust(tot_len)
+    pre_len = len(prefix[2])
+    prefix = [ pre.ljust(pre_len,'*') for pre in prefix ]
     return prefix, measures
 
 def format_measures(prefix, measures):
